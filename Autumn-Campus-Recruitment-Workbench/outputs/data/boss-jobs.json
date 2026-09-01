@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "source": "boss",
+    "status": "stale",
+    "query": "前端 React",
+    "city": "101020100",
+    "count": 15,
+    "collectionMode": "authenticated_chrome_extension",
+    "fetchedAt": "2026-08-14T08:32:05.197Z",
+    "syncStatus": "access_restricted",
+    "syncMessage": "您的环境存在异常.",
+    "lastAttemptAt": "2026-08-15T05:24:41.615Z"
+  },
+  "jobs": [
+    {
+      "id": "boss-20d3ee74fcb9c39b0nV72NW0FVdW",
+      "title": "国内 top 大厂项目-前端开发（react）",
+      "company": "人瑞网络科技",
+      "source": "boss",
+      "location": "上海·杨浦区·五角场",
+      "remote": "3-5年 · 本科",
+      "minSalary": 15,
+      "maxSalary": 30,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "ToB",
+        "AI",
+        "前端开发"
+      ],
+      "summary": "3-5年 · 本科；详情描述公开薪资范围15-30k。",
+      "url": "https://www.zhipin.com/job_detail/20d3ee74fcb9c39b0nV72NW0FVdW.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-97c9f2d9e6fe609f1Xd40tu_EFBQ",
+      "title": "React前端开发工程师",
+      "company": "睿服科技",
+      "source": "boss",
+      "location": "上海·黄浦区·董家渡",
+      "remote": "5-10年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "5-10年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/97c9f2d9e6fe609f1Xd40tu_EFBQ.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-6eea87134cabbced1Hd_3Nm1ElZX",
+      "title": "react前端开发工程师",
+      "company": "蜂阁信息",
+      "source": "boss",
+      "location": "上海·闵行区·虹桥",
+      "remote": "1-3年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "1-3年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/6eea87134cabbced1Hd_3Nm1ElZX.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-662cde7ce23ff8650nJ52dW4FVdW",
+      "title": "React前端开发工程师",
+      "company": "开荣集团",
+      "source": "boss",
+      "location": "上海·普陀区·曹杨",
+      "remote": "1-3年 · 硕士",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "1-3年 · 硕士；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/662cde7ce23ff8650nJ52dW4FVdW.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-e708304437d049bf1Hx929i7FlNT",
+      "title": "React前端开发工程师",
+      "company": "法本",
+      "source": "boss",
+      "location": "上海·黄浦区·董家渡",
+      "remote": "3-5年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "3-5年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/e708304437d049bf1Hx929i7FlNT.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-f7e173c1e8b5a9b003Fy2Nu5E1dT",
+      "title": "初中级前端（react，现场面试）",
+      "company": "赞同科技",
+      "source": "boss",
+      "location": "上海·浦东新区·张江",
+      "remote": "5-10年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "5-10年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/f7e173c1e8b5a9b003Fy2Nu5E1dT.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-63ee2c0d6b64048703F82ti4GFRY",
+      "title": "前端开发工程师（react/统本）",
+      "company": "上海锐赢",
+      "source": "boss",
+      "location": "上海·浦东新区·陆家嘴",
+      "remote": "3-5年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "3-5年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/63ee2c0d6b64048703F82ti4GFRY.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-00d48717c0c87fef0nF82dm7F1NX",
+      "title": "React前端工程师，Autopilot (MJ013737)",
+      "company": "特斯拉 Tesla",
+      "source": "boss",
+      "location": "上海·浦东新区·世博",
+      "remote": "10年以上 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "Autopilot",
+        "前端开发"
+      ],
+      "summary": "10年以上 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/00d48717c0c87fef0nF82dm7F1NX.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-34770490515ad01b03x62Nq4EFBZ",
+      "title": "React前端开发工程师",
+      "company": "上海识刻网络科技",
+      "source": "boss",
+      "location": "上海·徐汇区·漕河泾",
+      "remote": "3-5年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "3-5年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/34770490515ad01b03x62Nq4EFBZ.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-5521996545c30be603Z63du8EFFV",
+      "title": "前端开发工程师（侧重react)",
+      "company": "南京运享通信息科技",
+      "source": "boss",
+      "location": "上海·浦东新区·北蔡",
+      "remote": "经验不限 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "经验不限 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/5521996545c30be603Z63du8EFFV.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-e2efe6be85d0d6d703Fy3t2_GFJU",
+      "title": "java全栈工程师《前端React，偏后端》",
+      "company": "泛微网络",
+      "source": "boss",
+      "location": "上海·闵行区·浦江",
+      "remote": "1-3年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "Java",
+        "React",
+        "全栈"
+      ],
+      "summary": "1-3年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/e2efe6be85d0d6d703Fy3t2_GFJU.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-d3ad0869a6621c481nF63dq-EFJY",
+      "title": "前端开发工程师（react）",
+      "company": "盈嘉互联",
+      "source": "boss",
+      "location": "上海·徐汇区·漕河泾",
+      "remote": "经验不限 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "React",
+        "前端开发"
+      ],
+      "summary": "经验不限 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/d3ad0869a6621c481nF63dq-EFJY.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-385a4580beeb62fb1nVz29y9FFJX",
+      "title": "前端架构师",
+      "company": "新智认知",
+      "source": "boss",
+      "location": "上海·浦东新区·金桥",
+      "remote": "3-5年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "前端架构",
+        "前端开发"
+      ],
+      "summary": "3-5年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/385a4580beeb62fb1nVz29y9FFJX.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-0e5c3c41b6f467091XJ_0t-1FFJT",
+      "title": "前端开发",
+      "company": "汉朔公司",
+      "source": "boss",
+      "location": "上海·浦东新区·南码头",
+      "remote": "3-5年 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "前端开发"
+      ],
+      "summary": "3-5年 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/0e5c3c41b6f467091XJ_0t-1FFJT.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    },
+    {
+      "id": "boss-6c7bc3f76e5d505d1HF409i1FVJZ",
+      "title": "前端实习生",
+      "company": "幻量科技",
+      "source": "boss",
+      "location": "上海·浦东新区·陆家嘴",
+      "remote": "5天/周 · 3个月 · 本科",
+      "minSalary": 0,
+      "maxSalary": 0,
+      "postedHours": 1,
+      "skills": [
+        "前端开发",
+        "实习"
+      ],
+      "summary": "5天/周 · 3个月 · 本科；薪资待详情页补充。",
+      "url": "https://www.zhipin.com/job_detail/6c7bc3f76e5d505d1HF409i1FVJZ.html",
+      "fetchedAt": "2026-08-14T08:08:00+08:00"
+    }
+  ]
+}

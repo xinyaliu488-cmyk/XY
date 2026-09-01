@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JobLens 简历职位查询</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">JL</div>
+        <div>
+          <strong>JobLens</strong>
+          <span>职位聚合与简历匹配</span>
+        </div>
+      </div>
+
+      <nav class="nav-list">
+        <button class="nav-item active" type="button" data-view="search" title="职位搜索">
+          <span aria-hidden="true">⌕</span><span>职位搜索</span>
+        </button>
+        <button class="nav-item" type="button" data-view="resume" title="简历画像">
+          <span aria-hidden="true">◧</span><span>简历画像</span>
+        </button>
+        <button class="nav-item" type="button" data-view="saved" title="保存搜索">
+          <span aria-hidden="true">★</span><span>保存搜索</span>
+        </button>
+        <button class="nav-item" type="button" data-view="sources" title="数据源">
+          <span aria-hidden="true">☷</span><span>数据源</span>
+        </button>
+      </nav>
+
+      <section class="sync-panel" aria-label="自动更新状态">
+        <div class="sync-topline">
+          <span class="pulse" aria-hidden="true"></span>
+          <strong>自动更新</strong>
+        </div>
+        <p id="syncText">每 30 秒刷新一次招聘信息</p>
+        <label class="toggle-row">
+          <input id="autoRefresh" type="checkbox" checked />
+          <span>开启自动刷新</span>
+        </label>
+      </section>
+    </aside>
+
+    <main class="workspace">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">跨平台招聘信息检索</p>
+          <h1>用一份简历，搜索多家求职网站的机会。</h1>
+        </div>
+        <div class="top-actions">
+          <button id="refreshBtn" class="icon-button" type="button" title="立即刷新" aria-label="立即刷新">↻</button>
+          <button id="saveSearchBtn" class="primary-button" type="button">保存搜索</button>
+        </div>
+      </header>
+
+      <section class="search-panel" aria-label="搜索筛选">
+        <div class="field keyword-field">
+          <label for="query">职位、技能或公司</label>
+          <input id="query" type="search" value="前端 React" placeholder="例如：数据分析师、Java、产品经理" />
+        </div>
+        <div class="field">
+          <label for="location">城市 / 远程</label>
+          <input id="location" type="text" value="上海" placeholder="例如：北京、深圳、远程" />
+        </div>
+        <div class="field compact">
+          <label for="salary">最低月薪</label>
+          <select id="salary">
+            <option value="0">不限</option>
+            <option value="15">15k+</option>
+            <option value="25" selected>25k+</option>
+            <option value="35">35k+</option>
+            <option value="50">50k+</option>
+          </select>
+        </div>
+        <button id="searchBtn" class="search-button" type="button">搜索</button>
+      </section>
+
+      <section class="metrics" aria-label="搜索概览">
+        <div class="metric-card">
+          <span>匹配职位</span>
+          <strong id="resultCount">0</strong>
+        </div>
+        <div class="metric-card">
+          <span>平均匹配度</span>
+          <strong id="avgMatch">0%</strong>
+        </div>
+        <div class="metric-card">
+          <span>活跃来源</span>
+          <strong id="sourceCount">0</strong>
+        </div>
+        <div class="metric-card">
+          <span>上次更新</span>
+          <strong id="lastUpdated">--:--</strong>
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <section class="results-section" aria-label="职位结果">
+          <div class="section-heading">
+            <div>
+              <h2>职位结果</h2>
+              <p>按简历关键词、薪资、城市和平台状态综合排序</p>
+            </div>
+            <select id="sortBy" aria-label="排序方式">
+              <option value="match">匹配度优先</option>
+              <option value="salary">薪资优先</option>
+              <option value="fresh">最新发布</option>
+            </select>
+          </div>
+          <div id="jobList" class="job-list"></div>
+        </section>
+
+        <aside class="right-panel">
+          <section class="panel-block" data-panel="resume">
+            <div class="section-heading small">
+              <h2>简历画像</h2>
+              <button id="applyProfileBtn" class="text-button" type="button">应用</button>
+            </div>
+            <textarea id="resumeText" spellcheck="false">React, TypeScript, Node.js, 数据可视化, SaaS, 英语沟通, A/B 测试</textarea>
+            <div id="skillChips" class="chip-cloud"></div>
+          </section>
+
+          <section class="panel-block" data-panel="sources">
+            <div class="section-heading small">
+              <h2>招聘来源</h2>
+              <button id="allSourcesBtn" class="text-button" type="button">全选</button>
+            </div>
+            <div id="sourceList" class="source-list"></div>
+          </section>
+
+          <section class="panel-block" data-panel="saved">
+            <div class="section-heading small">
+              <h2>保存搜索</h2>
+              <button id="clearSavedBtn" class="text-button" type="button">清空</button>
+            </div>
+            <div id="savedList" class="saved-list empty-state">还没有保存的搜索</div>
+          </section>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <template id="jobCardTemplate">
+    <article class="job-card">
+      <div class="company-logo" aria-hidden="true"></div>
+      <div class="job-main">
+        <div class="job-title-row">
+          <div>
+            <h3></h3>
+            <p class="company-line"></p>
+          </div>
+          <span class="match-pill"></span>
+        </div>
+        <p class="job-summary"></p>
+        <div class="tag-row"></div>
+        <div class="job-footer">
+          <span class="salary"></span>
+          <span class="posted"></span>
+          <a class="apply-link" href="#" target="_blank" rel="noreferrer">查看职位</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>

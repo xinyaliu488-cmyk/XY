@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 280px; margin: 0; padding: 16px; font: 14px system-ui, sans-serif; color: #172235; }
+    h1 { margin: 0 0 8px; font-size: 17px; }
+    p { min-height: 40px; margin: 0 0 12px; color: #647080; line-height: 1.45; white-space: pre-line; }
+    button { width: 100%; min-height: 38px; border: 0; border-radius: 6px; background: #1d8f63; color: white; font-weight: 700; }
+    small { display: block; margin-top: 10px; color: #7b8795; }
+  </style>
+</head>
+<body>
+  <h1>JobLens BOSS Sync</h1>
+  <p id="status">正在读取状态…</p>
+  <button id="sync" type="button">立即同步</button>
+  <small>每 30 分钟自动同步一次</small>
+  <script src="popup.js"></script>
+</body>
+</html>

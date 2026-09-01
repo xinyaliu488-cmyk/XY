@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "JobLens BOSS Sync",
+  "version": "1.0.0",
+  "description": "将已登录 BOSS 直聘页面中的职位同步到本地 JobLens。",
+  "permissions": ["alarms", "storage", "tabs"],
+  "host_permissions": ["https://www.zhipin.com/*", "http://127.0.0.1:4173/*"],
+  "background": { "service_worker": "service-worker.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhipin.com/web/geek/job*", "https://www.zhipin.com/web/geek/jobs*"],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": { "default_title": "JobLens BOSS Sync", "default_popup": "popup.html" }
+}
